@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="logo.png"/>
+    <link rel="stylesheet" href="index_test.css" />
+    <title>Compensation application</title>
+  </head>
+  <body>
+    <div class="header">
+      <img src="./logo.png" alt="logo" />
+      <h1 class="title">
+        WORKERS COMPENSATION SUPPLEMENTAL APPLICATION
+      </h1>
+    </div>
+    <form>
+      <div class="top-info">
+        <div>
+          <label>Insured:</label>
+          <input type="text" id="insured" name="insured" />
+        </div>
+        <div>
+          <label>Effective Date:</label>
+          <input type="text" id="ef-date" name="ef-date" />
+        </div>
+        <div>
+          <label>Agent:</label>
+          <input type="text" id="agent" name="agent" />
+        </div>
+      </div>
+      <div class="main-questions">
+        <div class="question">
+          <h3 style="display: inline-block">
+            1. COMPLETE DESCRIPTION OF OPERATIONS:
+          </h3>
+          <input type="text" id="operation-desc" />
+        </div>
+        <h3>2. EMPLOYEE INFORMATION</h3>
+        <div class="question">
+          <span class="sub-question">Are any Temporary employees used?</span>
+          <div class="yes-no-question">
+            <label for="temp-employees">YES</label>
+            <input
+              type="radio"
+              id="temp-employees"
+              name="temp-employees"
+              value="YES"
+            />
+            <label for="temp-employees">NO</label>
+            <input
+              type="radio"
+              id="temp-employees"
+              name="temp-employees"
+              value="NO"
+            />
+            <br />
+          </div>
+          <label
+          >If yes, please provide details, and name of insurance carrier
+          covering their these employees:
+        </label>
+        <span class="bar"></span>
+          <input type="text" id="ifyes-desc" name="ifyes-desc" />
+        </div>
+        <h3>3. HIRING PROCEDURES</h3>
+        <div class="question flex">
+          <div>
+            <label class="sub-question">Pre-employment Applications</label> <br />
+            <label class="sub-question">Physicals</label> <br />
+            <label class="sub-question">MVR's checked</label> <br />
+            <label class="sub-question">New hire training program</label> <br />
+            <label class="sub-question">References Checked</label> <br />
+            <label class="sub-question">Drug Testing</label> <br />
+            <label class="sub-question">Written job desc</label>
+          </div>
+          <div>
+            <div class="yes-no-question">
+              <label for="pre-employment">YES</label>
+              <input type="radio" id="pre-employment" name="pre-employment" value="YES"/>
+              <label for="pre-employment">NO</label>
+              <input type="radio" id="pre-employment" name="pre-employment" value="NO"  /> <br/>
+            </div>
+            <div class="yes-no-question">
+              <label for="physicals">YES</label>
+              <input type="radio" id="physicals" name="physicals" value="YES" />
+              <label for="physicals">NO</label>
+              <input type="radio" id="physicals" name="physicals" value="NO" /> <br/>
+            </div>
+            <div class="yes-no-question">
+              <label for="mvr">YES</label>
+              <input type="radio" id="mvr" name="mvr" value="YES" />
+              <label for="mvr">NO</label>
+              <input type="radio" id="mvr" name="mvr" value="NO" /> <br/>
+            </div>
+            <div class="yes-no-question">
+              <label for="new-hire">YES</label>
+              <input type="radio" id="new-hire" name="new-hire" value="YES" />
+              <label for="new-hire">NO</label>
+              <input type="radio" id="new-hire" name="new-hire" value="NO" /> <br/>         
+            </div>
+            <div class="yes-no-question">
+              <label for="references">YES</label>
+              <input type="radio" id="references" name="references" value="YES" />
+              <label for="references">NO</label>
+              <input type="radio" id="references" name="references" value="NO" /> <br />
+            </div>
+            <div class="yes-no-question">
+              <label for="drug-test">YES</label>
+              <input type="radio" id="drug-test" name="drug-test" value="YES" />
+              <label for="drug-test">NO</label>
+              <input type="radio" id="drug-test" name="drug-test" value="NO" /> <br />
+            </div>
+            <div class="yes-no-question">
+              <label for="job-desc">YES</label>
+              <input type="radio" id="job-desc" name="job-desc" value="YES" />
+              <label for="job-desc">NO</label>
+              <input type="radio" id="job-desc" name="job-desc" value="NO" /> <br />
+            </div>
+          </div>
+        </div>
+        <h3>4. LOSS CONTROL / SAFETY PROGRAM</h3>
+        <div class="question flex">
+          <div class="mob-hide">
+            <label class="sub-question">Safety program in place / enforced:</label> <!-- <br/> -->
+            <label class="sub-question">How many years:</label> <!-- <br/> -->
+            <label class="sub-question">Frequency of safety meetings:</label> <!-- <br/> -->
+            <label class="sub-question">Number of vehicles:</label> <!-- <br/> -->
+            <label class="sub-question">Radius of operation:</label> <!-- <br/> -->
+            <label class="sub-question">Types of personal protective equipment worn:</label> <!-- <br/> -->
+            <label class="sub-question">Maximum weight lifted:</label> <!-- <br/> -->
+            <label class="sub-question">Mechanical devices used:</label> <!-- <br/> -->
+          </div>
+          <div>
+            <div class="yes-no-question">
+              <label for="safety-prog">YES</label>
+              <input type="radio" id="safety-prog" name="safety-prog" value="YES" />
+              <label for="safety-prog">NO</label>
+              <input type="radio" id="safety-prog" name="safety-prog" value="NO" />
+              <br />
+            </div>
+            <div class="group">
+              <input class="inputMaterial" type="text" id="numb-years" name="numb-years" required /> <br />
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label class="mob-label">How many years:</label> 
+            </div>
+            <div class="group">
+              <input class="inputMaterial" type="text" id="freq uency-meetings" name="frequency-meetings" required/><br />
+              <span class="highlight"></span>
+              <span class="bar"></span>
+            <label class="mob-label">Frequency of safety meetings:</label> 
+            </div>
+            <div class="group">
+              <input class="inputMaterial" type="text" id="numb-vehical" name="numb-vehical" required /> <br />
+              <span class="highlight"></span>
+              <span class="bar"></span>
+            <label class="mob-label">Number of vehicles:</label>
+            </div>
+            <div class="group">
+              <input class="inputMaterial" type="text" id="radius" name="radius" required /> <br />
+              <span class="highlight"></span>
+              <span class="bar"></span>
+            <label class="mob-label">Radius of operation:</label>
+            </div>
+            <div class="group">
+              <input class="inputMaterial" type="text" id="numb-years" name="numb-years" required /> <br />
+              <!-- change text-box size -->
+              <span class="highlight"></span>
+              <span class="bar"></span>
+            <label class="mob-label">Types of personal protective equipment worn:</label>
+            </div>
+            <div class="group">
+              <input class="inputMaterial" type="text" id="max-weight" name="max-weight" required /> <br/>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+            <label class="mob-label">Maximum weight lifted:</label>
+            </div>
+            <div class="group">
+              <input class="inputMaterial" type="text" id="mechanical-device" name="mechanical-device" required /> <br/>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label class="mob-label"  for="mechanical-device">Mechanical devices used:</label>
+            </div>
+            <br />
+          </div>
+        </div>
+      </div>
+    </form>
+    <button class="button"><span>SUBMIT</span></button>
+  </body>
+</html>
