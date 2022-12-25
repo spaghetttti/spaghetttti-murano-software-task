@@ -87,7 +87,7 @@ input[type="radio"] {
   margin: 0;
   font: inherit;
   color: currentColor;
-  width: 1.15em;
+  min-width: 1.15em;
   height: 1.15em;
   border: 0.15em solid currentColor;
   border-radius: 50%;
@@ -128,6 +128,7 @@ input[type="text"]:focus {
 input.inputMaterial {
   height: 24px;
   width: 312px;
+  margin-bottom: 7px;
 }
 
 .button {
@@ -160,7 +161,7 @@ input.inputMaterial {
 .bar {
   position: relative;
   display: block;
-  width: 315px;
+  width: 330px;
 }
 
 .bar:before,
@@ -168,7 +169,7 @@ input.inputMaterial {
   content: "";
   height: 2px;
   width: 0;
-  bottom: 1px;
+  bottom: 6px;
   position: absolute;
   background: var(--textColor);
   transition: 0.2s ease all;
@@ -191,13 +192,18 @@ input.inputMaterial {
 
 .mob-hide > label.sub-question {
   display: block;
+  height: 25.7px;
+}
+
+.yes-no-question>.yes-no {
+  display: none;
 }
 
 @media only screen and (max-width: 992px) {
   * {
     font-size: 17px;
   }
-  
+
   input[type="text"] {
     display: block;
   }
@@ -223,10 +229,14 @@ input.inputMaterial {
     outline: none;
   }
 
-  .mob-hide > .sub-question:not(.mob-hide > .sub-question:first-of-type) {
+  .mob-hide {
     display: none;
   }
 
+  .yes-no-question>.yes-no {
+    display: unset;
+  }
+  
   .flex:last-of-type {
     flex-direction: column;
   }

@@ -125,15 +125,25 @@
           <div class="mob-hide">
             <label class="sub-question">Safety program in place / enforced:</label>
             <label class="sub-question">How many years:</label> 
+            <label class="sub-question">Hazard Communication Program:</label> 
+            <label class="sub-question">Safety incentive program:</label> 
             <label class="sub-question">Frequency of safety meetings:</label>
+            <label class="sub-question">Are accident investigations performed:</label>
+            <label class="sub-question">Are modified / light duties available:</label>
+            <label class="sub-question">Does the insured have delivery exposure:</label>
             <label class="sub-question">Number of vehicles:</label> 
             <label class="sub-question">Radius of operation:</label>
+            <label class="sub-question">Vehicle maintenance program in place:</label>
             <label class="sub-question">Types of personal protective equipment worn:</label> 
+            <label class="sub-question">Material handling exposure:</label>
+            <label class="sub-question">Back belts worn:</label>
             <label class="sub-question">Maximum weight lifted:</label> 
             <label class="sub-question">Mechanical devices used:</label> 
           </div>
           <div>
             <div class="yes-no-question">
+            <label class="sub-question yes-no">Safety program in place / enforced:</label>
+<!-- !! -->
               <label for="safety-prog">YES</label>
               <input type="radio" id="safety-prog" name="safety-prog" value="YES" />
               <label for="safety-prog">NO</label>
@@ -146,11 +156,56 @@
               <span class="bar"></span>
               <label class="mob-label">How many years:</label> 
             </div>
+            <div class="yes-no-question">
+            <label class="sub-question yes-no">Hazard Communication Program:</label> 
+<!-- !! -->
+              <label for="hazard">YES</label>
+              <input type="radio" id="hazard" name="hazard" value="YES" />
+              <label for="hazard">NO</label>
+              <input type="radio" id="hazard" name="hazard" value="NO" />
+              <br />
+            </div>
+            <div class="yes-no-question">
+              <label class="sub-question yes-no">Safety incentive program:</label> 
+              <!-- !! -->
+              <label for="safety-incen">YES</label>
+              <input type="radio" id="safety-incen" name="safety-incen" value="YES" />
+              <label for="safety-incen">NO</label>
+              <input type="radio" id="safety-incen" name="safety-incen" value="NO" />
+              <br />
+            </div>
             <div class="group">
               <input class="inputMaterial" type="text" id="freq uency-meetings" name="frequency-meetings" required/><br />
               <span class="highlight"></span>
               <span class="bar"></span>
             <label class="mob-label">Frequency of safety meetings:</label> 
+            </div>
+            <div class="yes-no-question">
+              <label class="sub-question yes-no">Are accident investigations performed:</label> 
+              <!-- !! -->
+              <label for="investigations">YES</label>
+              <input type="radio" id="investigations" name="investigations" value="YES" />
+              <label for="investigations">NO</label>
+              <input type="radio" id="investigations" name="investigations" value="NO" />
+              <br />
+            </div>
+            <div class="yes-no-question">
+              <label class="sub-question yes-no">Are modified / light duties available:</label> 
+              <!-- !! -->
+              <label for="modified">YES</label>
+              <input type="radio" id="modified" name="modified" value="YES" />
+              <label for="modified">NO</label>
+              <input type="radio" id="modified" name="modified" value="NO" />
+              <br />
+            </div>
+            <div class="yes-no-question">
+              <label class="sub-question yes-no">Does the insured have delivery exposure:</label> 
+              <!-- !! -->
+              <label for="delivery-exposure">YES</label>
+              <input type="radio" id="delivery-exposure" name="delivery-exposure" value="YES" />
+              <label for="delivery-exposure">NO</label>
+              <input type="radio" id="delivery-exposure" name="delivery-exposure" value="NO" />
+              <br />
             </div>
             <div class="group">
               <input class="inputMaterial" type="text" id="numb-vehical" name="numb-vehical" required /> <br />
@@ -164,12 +219,39 @@
               <span class="bar"></span>
             <label class="mob-label">Radius of operation:</label>
             </div>
+            <div class="yes-no-question">
+              <label class="sub-question yes-no">Vehicle maintenance program in place:</label> 
+              <!-- !! -->
+              <label for="vehicles">YES</label>
+              <input type="radio" id="vehicles" name="vehicles" value="YES" />
+              <label for="vehicles">NO</label>
+              <input type="radio" id="vehicles" name="vehicles" value="NO" />
+              <br />
+            </div>
             <div class="group">
               <input class="inputMaterial" type="text" id="numb-years" name="numb-years" required /> <br />
               <!-- change text-box size -->
               <span class="highlight"></span>
               <span class="bar"></span>
             <label class="mob-label">Types of personal protective equipment worn:</label>
+            </div>
+            <div class="yes-no-question">
+              <label class="sub-question yes-no">Material handling exposure:</label> 
+              <!-- !! -->
+              <label for="exposure">YES</label>
+              <input type="radio" id="exposure" name="exposure" value="YES" />
+              <label for="exposure">NO</label>
+              <input type="radio" id="exposure" name="exposure" value="NO" />
+              <br />
+            </div>
+             <div class="yes-no-question">
+              <label class="sub-question yes-no">Back belts worn:</label> 
+              <!-- !! -->
+              <label for="belts">YES</label>
+              <input type="radio" id="belts" name="belts" value="YES" />
+              <label for="belts">NO</label>
+              <input type="radio" id="belts" name="belts" value="NO" />
+              <br />
             </div>
             <div class="group">
               <input class="inputMaterial" type="text" id="max-weight" name="max-weight" required /> <br/>
